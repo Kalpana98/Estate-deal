@@ -1,4 +1,4 @@
-{% extends 'base1.html' %}
+{% extends 'base.html' %}
 
 {% load humanize %}
 
@@ -96,7 +96,7 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-money-bill-alt"></i> Asking Price:
-                  <span class="float-right">${{ listing.price | intcomma }}</span>
+                  <span class="float-right">INR {{ listing.price | intcomma }}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-bed"></i> Bedrooms:

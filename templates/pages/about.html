@@ -1,4 +1,4 @@
-{% extends 'base1.html' %} 
+{% extends 'base.html' %} 
 
 {% load static %}
 
@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="display-4">About Property Search</h1>
+          <h1 class="display-4">About the Website</h1>
           <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
         </div>
       </div>
@@ -66,7 +66,7 @@
     <h2 class="display-4">We Work For You</h2>
     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
     <hr>
-    <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
   </section>
 
   <!-- Team -->
